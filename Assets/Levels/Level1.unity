@@ -4718,7 +4718,7 @@ GameObject:
   - component: {fileID: 1261870633}
   - component: {fileID: 1261870635}
   - component: {fileID: 1261870634}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -7713,21 +7713,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1505713994885664867, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1505713994885664871, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1505713994885664892, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
       propertyPath: m_Name
       value: Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5565976604080447342, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
-      propertyPath: bubbleReady
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7842,10 +7830,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1645924983}
     m_Modifications:
-    - target: {fileID: 4561369903223937442, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4561369903223937443, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.23
@@ -7884,14 +7868,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4561369903223937443, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4561369903223937446, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4561369903223937446, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
-      propertyPath: groundLayer.m_Bits
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4561369903223937469, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
