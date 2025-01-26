@@ -13,7 +13,7 @@ public class GameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeStarted = true;
+        //timeStarted = true;
         LoseHUD.SetActive(false);
         Time.timeScale = 1f;
     }
