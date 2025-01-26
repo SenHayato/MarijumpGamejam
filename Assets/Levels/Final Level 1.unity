@@ -2284,7 +2284,11 @@ PrefabInstance:
       objectReference: {fileID: 994720903}
     - target: {fileID: 3967480210118264741, guid: 8530d8d06a8724a40997dbff89a9b0ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967480210118264741, guid: 8530d8d06a8724a40997dbff89a9b0ac, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NextSceneLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4141607732779541758, guid: 8530d8d06a8724a40997dbff89a9b0ac, type: 3}
       propertyPath: m_AnchorMax.y
