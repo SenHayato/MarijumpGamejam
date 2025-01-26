@@ -50,6 +50,14 @@ public class GameMaster : MonoBehaviour
             //Cursor.lockState = CursorLockMode.None;
         }
     }
+    public void Quit()
+    {
+        Application.Quit(); //Quits the game (only works in build)
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; //Exits play mode (will only be executed in the editor)
+#endif
+    }
     public void Wining()
     {
         Time.timeScale = 0;
