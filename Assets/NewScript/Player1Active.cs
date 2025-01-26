@@ -11,13 +11,16 @@ public class Player1Active : MonoBehaviour
     [SerializeField] private GameObject bubbleObj;
     //[SerializeField] private GameObject Player1;
     private float horizontalValue;
+    [SerializeField] private float bubbleDuration;
     private Vector3 velocity;
+    [SerializeField] private bool bubbleReady;
 
     // Start is called before the first frame update
     private void Awake()
     {
         control = FindAnyObjectByType<PlayerControls>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        bubbleReady = true;
         //Player1 = GameObject.FindGameObjectWithTag("Player1");
     }
     void Start()
@@ -41,18 +44,24 @@ public class Player1Active : MonoBehaviour
         transform.Translate(velocity);
     }
 
-    void BlowBubble()
+    IEnumerator BlowBubble()
     {
-        if (control.GetActionPlayer_1())
+        if (bubbleReady)
         {
-            Instantiate(bubbleObj, gameObject.transform);
+            if (control.GetActionPlayer_1())
+            {
+                Instantiate(bubbleObj, this.transform);
+                bubbleReady = false;
+                yield return new WaitForSeconds(bubbleDuration);
+            }
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
-        BlowBubble();
+        StartCoroutine(BlowBubble());
     }
 }
