@@ -163,13 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad90225a3078c64db7ad940e9a90d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 5438336554185518111}
+  playerType: 0
   speed: 10
   jumpPower: 20
   coyoteTime: 0.25
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   wallLayer:
     serializedVersion: 2
     m_Bits: 0

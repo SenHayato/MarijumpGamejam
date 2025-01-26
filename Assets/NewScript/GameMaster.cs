@@ -13,7 +13,7 @@ public class GameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeStarted = true;
+        //timeStarted = true;
         LoseHUD.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -22,7 +22,7 @@ public class GameMaster : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60F);
         int seconds = Mathf.FloorToInt(timer - minutes * 60);
-        string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+        string niceTime = string.Format("{00}", seconds);
         Countdown = niceTime;
     }
 
@@ -32,7 +32,6 @@ public class GameMaster : MonoBehaviour
         if (timeStarted == true)
         {
             timer -= Time.deltaTime;
-            //LightRot = transform.Rotate(1f * Time.deltaTime, 0f, 0f);
         }
     }
 

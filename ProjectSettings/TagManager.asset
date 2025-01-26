@@ -7,6 +7,10 @@ TagManager:
   - Checkpoint
   - Enemy
   - Ground
+  - Border
+  - Player1
+  - Player2
+  - Bubble
   layers:
   - Default
   - TransparentFX
@@ -16,9 +20,9 @@ TagManager:
   - UI
   - Wall
   - Bubble
-  - Player_1
-  - Player_2
   - 
+  - 
+  - Player
   - 
   - 
   - 
