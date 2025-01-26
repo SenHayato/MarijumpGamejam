@@ -148,7 +148,7 @@ MonoBehaviour:
   moveSpeed: 13
   spriteRenderer: {fileID: 0}
   bubbleObj: {fileID: 7615014626448511860, guid: bd8340602d85fcd4bb6e67d00c4902c4, type: 3}
-  bubbleDuration: 0
+  bubbleDuration: 0.7
   bubbleReady: 0
 --- !u!50 &7164062095688390861
 Rigidbody2D:
