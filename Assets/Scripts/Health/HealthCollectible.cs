@@ -8,7 +8,7 @@ public class HealthCollectible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) // Check if the collider is the player
+        if (collision.CompareTag("Player2")) // Check if the collider is the player
         {
             // Play the pickup sound
             if (SoundManager.instance != null && pickupSound != null)
