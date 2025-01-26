@@ -64,6 +64,7 @@ public class Player2Active : MonoBehaviour
     {
         if (isGrounded && control.GetJumpPlayer_2())
         {
+            animator.SetTrigger("jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             //jumpSound.Play();
             //jumpClip.PlayOneShot(l);

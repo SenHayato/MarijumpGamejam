@@ -10,7 +10,7 @@ public class Player1Active : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject bubbleObj;
     [SerializeField] private GameObject Player1;
-    [SerializeField] private GameObject SoundBlow;
+    // [SerializeField] private GameObject SoundBlow;
     private float horizontalValue;
     [SerializeField] private float bubbleDuration;
     private Vector3 velocity;
@@ -28,7 +28,7 @@ public class Player1Active : MonoBehaviour
         control = FindAnyObjectByType<PlayerControls>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         bubbleReady = true;
-        Player1 = GameObject.FindGameObjectWithTag("Player1");
+        // Player1 = GameObject.FindGameObjectWithTag("Player1");
     }
     void Start()
     {
@@ -51,7 +51,12 @@ public class Player1Active : MonoBehaviour
         }
         transform.Translate(velocity);
     }
-
+    // Update is called once per frame
+    void Update()
+    {
+        Movement();
+        StartCoroutine(BlowBubble());
+    }
     IEnumerator BlowBubble()
     {
         if (bubbleReady)
@@ -68,10 +73,5 @@ public class Player1Active : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Movement();
-        StartCoroutine(BlowBubble());
-    }
+
 }

@@ -1998,9 +1998,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelScenes:
-  - Level1
-  - Level2
-  - Level1
+  - Final Level 1
+  - Final Level 2
+  - Final Level 3
   buttons:
   - {fileID: 1198574110}
   - {fileID: 1734910307}

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 282383765757179851}
   m_Layer: 10
   m_Name: New Player 2
-  m_TagString: Player2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 9109426555881852544}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13d6ffb04e16b88479a65d4d462860e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
