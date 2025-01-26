@@ -9,10 +9,14 @@ public class GameMaster : MonoBehaviour
     public bool timeStarted = false;
     public string Countdown;
     public TextMeshProUGUI timerTxt;
+    public GameObject WinHUD;
     public GameObject LoseHUD;
+    private bool isWin;
+
     // Start is called before the first frame update
     void Start()
     {
+        isWin = false;
         //timeStarted = true;
         LoseHUD.SetActive(false);
         Time.timeScale = 1f;
@@ -45,6 +49,11 @@ public class GameMaster : MonoBehaviour
             Time.timeScale = 0f;
             //Cursor.lockState = CursorLockMode.None;
         }
+    }
+    public void Wining()
+    {
+        Time.timeScale = 0;
+        WinHUD.SetActive(true);
     }
 
     // Update is called once per frame
