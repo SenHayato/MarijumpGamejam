@@ -1210,11 +1210,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player_1_LeftKey: 97
+  Player_1_AltLeftKey: 0
   Player_1_RightKey: 100
+  Player_1_AltRightKey: 0
   Player_1_ActionKey: 101
+  Player_1_AltActionKey: 119
   Player_2_LeftKey: 260
+  Player_2_AltLeftKey: 276
   Player_2_RightKey: 262
+  Player_2_AltRightKey: 275
   Player_2_JumpKey: 264
+  Player_2_AltJumpKey: 273
 --- !u!114 &8212539463373792249
 MonoBehaviour:
   m_ObjectHideFlags: 0
