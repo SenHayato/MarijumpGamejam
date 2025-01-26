@@ -9,7 +9,7 @@ public class Player1Active : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject bubbleObj;
-    //[SerializeField] private GameObject Player1;
+    [SerializeField] private GameObject Player1;
     private float horizontalValue;
     [SerializeField] private float bubbleDuration;
     private Vector3 velocity;
@@ -21,7 +21,7 @@ public class Player1Active : MonoBehaviour
         control = FindAnyObjectByType<PlayerControls>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         bubbleReady = true;
-        //Player1 = GameObject.FindGameObjectWithTag("Player1");
+        Player1 = GameObject.FindGameObjectWithTag("Player1");
     }
     void Start()
     {
@@ -50,9 +50,10 @@ public class Player1Active : MonoBehaviour
         {
             if (control.GetActionPlayer_1())
             {
-                Instantiate(bubbleObj, this.transform);
+                Instantiate(bubbleObj, Player1.transform.position, Quaternion.identity);
                 bubbleReady = false;
                 yield return new WaitForSeconds(bubbleDuration);
+                bubbleReady = true;
             }
         }
         
