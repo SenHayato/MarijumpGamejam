@@ -15,8 +15,12 @@ public class Player1Active : MonoBehaviour
     [SerializeField] private float bubbleDuration;
     private Vector3 velocity;
     [SerializeField] private bool bubbleReady;
+
+    Animator animator => GetComponent<Animator>();
+
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip Blow;
+
 
     // Start is called before the first frame update
     private void Awake()
@@ -35,6 +39,7 @@ public class Player1Active : MonoBehaviour
     {
         velocity = Vector3.zero;
         horizontalValue = control.GetAxis_Player_1();
+        animator.SetBool("run", Mathf.Abs(horizontalValue) > 0.01f);
         if (horizontalValue > 0.01f)
         {
             spriteRenderer.flipX = false;

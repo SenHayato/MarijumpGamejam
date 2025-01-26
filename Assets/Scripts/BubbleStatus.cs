@@ -11,14 +11,14 @@ public class BubbleStatus : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        bubbleBehavior.playerHasStand = true;
+        // bubbleBehavior.playerHasStand = true;
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        bubbleBehavior.playerHasStandTime += Time.deltaTime;
+        // bubbleBehavior.playerHasStandTime += Time.deltaTime;
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        bubbleBehavior.playerHasStand = false;
+        // bubbleBehavior.playerHasStand = false;
     }
 }
