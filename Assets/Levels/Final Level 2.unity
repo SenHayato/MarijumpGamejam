@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0444223d20263f2498e7a5556bb769c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NamaScene: Final Level 1
+  NamaScene: Final Level 2
 --- !u!114 &164508590 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4786350407690682001, guid: 8530d8d06a8724a40997dbff89a9b0ac, type: 3}
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0444223d20263f2498e7a5556bb769c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NamaScene: 
+  NamaScene: Final Level 3
 --- !u!1 &2042171497
 GameObject:
   m_ObjectHideFlags: 0
