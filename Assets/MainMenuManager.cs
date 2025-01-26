@@ -11,6 +11,11 @@ public class MainMenuManager : MonoBehaviour
     {
         animator.SetTrigger("MainMenu");
     }
+    void Awake()
+    {
+        Time.timeScale = 1;
+        
+    }
     private void Start() {
         for (int i = 0; i < levelScenes.Length; i++)
         {
