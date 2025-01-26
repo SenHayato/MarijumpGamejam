@@ -11,6 +11,7 @@ public class Player2Active : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private bool isGrounded;
     private float horizontalValue;
+    Animator animator => GetComponent<Animator>();
 
     private Rigidbody2D rb;
 
@@ -24,6 +25,8 @@ public class Player2Active : MonoBehaviour
     void Movement()
     {
         horizontalValue = control.GetAxis_Player_2();
+        animator.SetBool("run", Mathf.Abs(horizontalValue) > 0.01f);
+
         if (horizontalValue < -0.01f)
         {
             spriteRenderer.flipX = true;
@@ -65,5 +68,7 @@ public class Player2Active : MonoBehaviour
     {
         Movement();
         JumpMove();
+        animator.SetBool("grounded",isGrounded);
     }
+    
 }

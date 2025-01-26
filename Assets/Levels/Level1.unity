@@ -2466,8 +2466,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 5, y: 5}
+    oldSize: {x: 3.640625, y: 1.546875}
+    newSize: {x: 3.640625, y: 1.546875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2516,15 +2516,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93bb3b00862995c4ab17a86f66217960, type: 3}
+  m_Sprite: {fileID: 1927194789, guid: 93bb3b00862995c4ab17a86f66217960, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 3.640625, y: 1.546875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &899971660
@@ -3092,8 +3092,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 5, y: 5}
+    oldSize: {x: 3.640625, y: 1.546875}
+    newSize: {x: 3.640625, y: 1.546875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3142,15 +3142,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93bb3b00862995c4ab17a86f66217960, type: 3}
+  m_Sprite: {fileID: 1927194789, guid: 93bb3b00862995c4ab17a86f66217960, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 3.640625, y: 1.546875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1106976109
@@ -5443,6 +5443,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1645924983}
     m_Modifications:
+    - target: {fileID: 1505713994885664865, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 4224
+      objectReference: {fileID: 0}
     - target: {fileID: 1505713994885664866, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.76
@@ -5487,7 +5491,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1505713994885664892, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6569467964494372302, guid: 49114f973cc553b41a5ffc519953e80b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5600,6 +5609,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1645924983}
     m_Modifications:
+    - target: {fileID: 4561369903223937440, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 4561369903223937443, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.23
@@ -5640,11 +5653,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4561369903223937446, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 136
+      objectReference: {fileID: 0}
     - target: {fileID: 4561369903223937469, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4561369903223937469, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8107345103243334671, guid: 0d32b927ddbbc124dbbd1302b9cd2743, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
