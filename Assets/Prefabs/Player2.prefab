@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 6020180426096432661}
   - component: {fileID: 6440318422452523349}
   - component: {fileID: 3348986323562531573}
+
   - component: {fileID: 2422244925869023753}
+
   m_Layer: 10
   m_Name: Player2
   m_TagString: Player2
@@ -150,6 +152,8 @@ MonoBehaviour:
   jumpForce: 11
   spriteRenderer: {fileID: 0}
   isGrounded: 1
+  audioSource: {fileID: 2599648001836696943}
+  Lompat: {fileID: 8300000, guid: 7b7dcc8c6144e4747a8a99625159065e, type: 3}
 --- !u!50 &3348986323562531573
 Rigidbody2D:
   serializedVersion: 4
@@ -177,15 +181,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+
 --- !u!95 &2422244925869023753
 Animator:
   serializedVersion: 5
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9109426555881852544}
   m_Enabled: 1
+
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 13d6ffb04e16b88479a65d4d462860e4, type: 2}
   m_CullingMode: 0
@@ -198,3 +205,4 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+

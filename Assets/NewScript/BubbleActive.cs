@@ -5,6 +5,8 @@ using UnityEngine;
 public class BubbleActive : MonoBehaviour
 {
     [SerializeField] Animator animator;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip Pop;
     // Start is called before the first frame update
 
     private void Awake()
@@ -21,6 +23,7 @@ public class BubbleActive : MonoBehaviour
         if (collision.gameObject.CompareTag("Player2"));
         {
             Destroy(gameObject, 0.5f);
+            audioSource.PlayOneShot(Pop);
             animator.SetTrigger("Explode");
         }
     }
