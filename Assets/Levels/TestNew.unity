@@ -4261,6 +4261,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7400734428596399356, guid: 2564861f2bf8dba4490edbc38508f4ff, type: 3}
+      propertyPath: SoundBlow
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
