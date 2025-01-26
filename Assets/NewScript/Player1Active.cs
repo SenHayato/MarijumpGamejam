@@ -10,11 +10,17 @@ public class Player1Active : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject bubbleObj;
     [SerializeField] private GameObject Player1;
+    [SerializeField] private GameObject SoundBlow;
     private float horizontalValue;
     [SerializeField] private float bubbleDuration;
     private Vector3 velocity;
     [SerializeField] private bool bubbleReady;
+
     Animator animator => GetComponent<Animator>();
+
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip Blow;
+
 
     // Start is called before the first frame update
     private void Awake()
@@ -53,6 +59,7 @@ public class Player1Active : MonoBehaviour
             if (control.GetActionPlayer_1())
             {
                 Instantiate(bubbleObj, Player1.transform.position, Quaternion.identity);
+                audioSource.PlayOneShot(Blow);
                 bubbleReady = false;
                 yield return new WaitForSeconds(bubbleDuration);
                 bubbleReady = true;
