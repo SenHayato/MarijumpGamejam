@@ -7,10 +7,13 @@ public class Player2Active : MonoBehaviour
     [SerializeField] private PlayerControls control;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
+    //[SerializeField] private AudioSource jumpClip;
     //[SerializeField] private float jumpSpeed;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private bool isGrounded;
     private float horizontalValue;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip Lompat;
 
     private Rigidbody2D rb;
 
@@ -40,6 +43,7 @@ public class Player2Active : MonoBehaviour
         if (collision.collider.CompareTag("Bubble"))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            audioSource.PlayOneShot(Lompat);
         } else
         {
             isGrounded = true;
@@ -56,6 +60,9 @@ public class Player2Active : MonoBehaviour
         if (isGrounded && control.GetJumpPlayer_2())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            //jumpSound.Play();
+            //jumpClip.PlayOneShot(l);
+            audioSource.PlayOneShot(Lompat);
             isGrounded = false;
         }
     }
